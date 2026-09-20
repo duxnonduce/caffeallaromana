@@ -16,7 +16,8 @@ const UI: Record<Lang, Record<string, string>> = {
     address: "Indirizzo",
     call: "Chiama",
     directions: "Indicazioni",
-    tagline: "Colazione, pranzo e aperitivo nel cuore di Monteroni"
+    tagline: "Colazione, pranzo e aperitivo nel cuore di Monteroni",
+    rights: "Tutti i diritti riservati"
   },
   en: {
     search: "Search the menu…",
@@ -28,7 +29,8 @@ const UI: Record<Lang, Record<string, string>> = {
     address: "Address",
     call: "Call",
     directions: "Directions",
-    tagline: "Breakfast, lunch and aperitivo in the heart of Monteroni"
+    tagline: "Breakfast, lunch and aperitivo in the heart of Monteroni",
+    rights: "All rights reserved"
   }
 };
 
@@ -353,7 +355,9 @@ export default function MenuApp() {
             </a>
           </div>
 
-          <p className="pt-2 text-center text-xs opacity-50">Menù digitale — solo consultazione</p>
+          <p className="pt-2 text-center text-xs opacity-50">
+            © {new Date().getFullYear()} {business.name} — {t.rights}
+          </p>
         </div>
       </footer>
     </main>
