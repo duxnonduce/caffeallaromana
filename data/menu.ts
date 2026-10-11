@@ -80,6 +80,43 @@ export const menu: MenuCategory[] = [
     ]
   },
   {
+    id: "aperitivi",
+    name: { it: "Aperitivi", en: "Aperitifs" },
+    items: [
+      { id: id(), name: { it: "Aperitivo della casa", en: "House aperitivo" }, note: { it: "bevanda esclusa", en: "drink not included" }, price: 12.0 },
+      { id: id(), name: { it: "Aperiticena", en: "Aperitivo dinner" }, note: { it: "bevanda esclusa", en: "drink not included" }, price: 15.0 },
+      { id: id(), name: { it: "Tagliere di salumi e formaggi", en: "Cured meat and cheese board" }, note: { it: "per 2 persone", en: "for 2 people" }, price: 28.0 },
+      { id: id(), name: { it: "Tagliere di soli salumi", en: "Cured meat board" }, note: { it: "per 2 persone", en: "for 2 people" }, price: 15.0 },
+      { id: id(), name: { it: "Tagliere di soli formaggi", en: "Cheese board" }, note: { it: "per 2 persone", en: "for 2 people" }, price: 15.0 },
+      { id: id(), name: { it: "Stuzzicheria tris", en: "Snack trio" }, desc: { it: "taralli, olive, arachidi", en: "taralli, olives, peanuts" }, price: 4.0 }
+    ]
+  },
+  {
+    id: "cocktail",
+    name: { it: "Cocktail", en: "Cocktails" },
+    items: [
+      { id: id(), name: { it: "Spritz Aperol", en: "Aperol Spritz" }, desc: { it: "prosecco, Aperol", en: "prosecco, Aperol" }, price: 6.0 },
+      { id: id(), name: { it: "Apertass", en: "Apertass" }, desc: { it: "Aperol, cedrata", en: "Aperol, citron soda" }, price: 6.0 },
+      { id: id(), name: { it: "Spritz Campari", en: "Campari Spritz" }, desc: { it: "prosecco, Campari", en: "prosecco, Campari" }, price: 7.0 },
+      { id: id(), name: { it: "Hugo Spritz", en: "Hugo Spritz" }, desc: { it: "prosecco, liquore al sambuco, menta", en: "prosecco, elderflower liqueur, mint" }, price: 7.0 },
+      { id: id(), name: { it: "Spritz Malibu Cherry", en: "Malibu Cherry Spritz" }, desc: { it: "Malibu, prosecco, succo di ciliegia", en: "Malibu, prosecco, cherry juice" }, price: 8.0 },
+      { id: id(), name: { it: "Spritz Limoncello", en: "Limoncello Spritz" }, desc: { it: "prosecco, limoncello", en: "prosecco, limoncello" }, price: 8.0 },
+      { id: id(), name: { it: "Negroni", en: "Negroni" }, desc: { it: "Campari, Martini rosso, gin", en: "Campari, sweet vermouth, gin" }, price: 7.0 },
+      { id: id(), name: { it: "Negroni sbagliato", en: "Negroni sbagliato" }, desc: { it: "Campari, Martini rosso, prosecco", en: "Campari, sweet vermouth, prosecco" }, price: 7.0 },
+      { id: id(), name: { it: "Negrosky", en: "Negrosky" }, desc: { it: "Campari, Martini rosso, vodka", en: "Campari, sweet vermouth, vodka" }, price: 7.0 },
+      { id: id(), name: { it: "Americano", en: "Americano" }, desc: { it: "Campari, Martini rosso, soda", en: "Campari, sweet vermouth, soda" }, price: 7.0 },
+      { id: id(), name: { it: "Margarita", en: "Margarita" }, desc: { it: "tequila, triple sec, succo di lime", en: "tequila, triple sec, lime juice" }, price: 7.0 },
+      { id: id(), name: { it: "Sex on the Beach", en: "Sex on the Beach" }, desc: { it: "vodka, liquore alla pesca, succo d'arancia e mirtillo rosso", en: "vodka, peach liqueur, orange and cranberry juice" }, price: 7.0 },
+      { id: id(), name: { it: "Moscow Mule", en: "Moscow Mule" }, desc: { it: "vodka, succo di lime, ginger beer e zenzero fresco", en: "vodka, lime juice, ginger beer and fresh ginger" }, price: 7.0 },
+      { id: id(), name: { it: "Gin Mule", en: "Gin Mule" }, desc: { it: "gin, succo di lime, ginger beer e zenzero fresco", en: "gin, lime juice, ginger beer and fresh ginger" }, price: 7.0 },
+      { id: id(), name: { it: "Mojito", en: "Mojito" }, desc: { it: "rum bianco, zucchero di canna, menta fresca, succo di lime e soda", en: "white rum, cane sugar, fresh mint, lime juice and soda" }, price: 8.0 },
+      { id: id(), name: { it: "Gin Tonic Tanqueray", en: "Gin Tonic Tanqueray" }, desc: { it: "gin e tonica", en: "gin and tonic water" }, price: 7.0 },
+      { id: id(), name: { it: "Gin Lemon Tanqueray", en: "Gin Lemon Tanqueray" }, desc: { it: "gin e tonica lemon", en: "gin and lemon tonic water" }, price: 7.0 },
+      { id: id(), name: { it: "Vodka Tonic", en: "Vodka Tonic" }, desc: { it: "vodka e tonica", en: "vodka and tonic water" }, price: 7.0 },
+      { id: id(), name: { it: "Vodka Lemon", en: "Vodka Lemon" }, desc: { it: "vodka e tonica lemon", en: "vodka and lemon tonic water" }, price: 7.0 }
+    ]
+  },
+  {
     id: "bevande",
     name: { it: "Bevande", en: "Drinks" },
     items: [
@@ -110,21 +147,22 @@ export const menu: MenuCategory[] = [
     items: [
       { id: id(), name: { it: "Nastro Azzurro", en: "Nastro Azzurro" }, price: 2.0 },
       { id: id(), name: { it: "Nastro Azzurro \"00\"", en: "Nastro Azzurro \"00\" (alcohol-free)" }, price: 2.0 },
-      { id: id(), name: { it: "Heineken", en: "Heineken" }, price: 2.5 },
       { id: id(), name: { it: "Corona", en: "Corona" }, price: 3.5 },
-      { id: id(), name: { it: "Tennent's", en: "Tennent's" }, price: 3.5 }
+      { id: id(), name: { it: "Tennent's", en: "Tennent's" }, price: 3.5 },
+      { id: id(), name: { it: "Beck's", en: "Beck's" }, price: 2.5 },
+      { id: id(), name: { it: "Ceres", en: "Ceres" }, price: 3.5 }
     ]
   },
   {
-    id: "aperitivi",
-    name: { it: "Aperitivi", en: "Aperitifs" },
+    id: "birra-spina",
+    name: { it: "Birra alla spina", en: "Draft beer" },
     items: [
-      { id: id(), name: { it: "Aperitivo della casa", en: "House aperitivo" }, note: { it: "bevanda esclusa", en: "drink not included" }, price: 12.0 },
-      { id: id(), name: { it: "Aperiticena", en: "Aperitivo dinner" }, note: { it: "bevanda esclusa", en: "drink not included" }, price: 15.0 },
-      { id: id(), name: { it: "Tagliere di salumi e formaggi", en: "Cured meat and cheese board" }, note: { it: "per 2 persone", en: "for 2 people" }, price: 28.0 },
-      { id: id(), name: { it: "Tagliere di soli salumi", en: "Cured meat board" }, note: { it: "per 2 persone", en: "for 2 people" }, price: 15.0 },
-      { id: id(), name: { it: "Tagliere di soli formaggi", en: "Cheese board" }, note: { it: "per 2 persone", en: "for 2 people" }, price: 15.0 },
-      { id: id(), name: { it: "Stuzzicheria tris", en: "Snack trio" }, desc: { it: "taralli, olive, arachidi", en: "taralli, olives, peanuts" }, price: 4.0 }
+      { id: id(), name: { it: "Heineken (media)", en: "Heineken (small)" }, desc: { it: "bionda", en: "lager" }, price: 3.5 },
+      { id: id(), name: { it: "Heineken (grande)", en: "Heineken (large)" }, desc: { it: "bionda", en: "lager" }, price: 5.0 },
+      { id: id(), name: { it: "Bulldog (media)", en: "Bulldog (small)" }, desc: { it: "doppio malto", en: "double malt" }, price: 4.0 },
+      { id: id(), name: { it: "Bulldog (grande)", en: "Bulldog (large)" }, desc: { it: "doppio malto", en: "double malt" }, price: 6.0 },
+      { id: id(), name: { it: "Ichnusa non filtrata (media)", en: "Ichnusa unfiltered (small)" }, desc: { it: "lager", en: "lager" }, price: 3.5 },
+      { id: id(), name: { it: "Ichnusa non filtrata (grande)", en: "Ichnusa unfiltered (large)" }, desc: { it: "lager", en: "lager" }, price: 5.0 }
     ]
   },
   {
@@ -200,6 +238,15 @@ export const menu: MenuCategory[] = [
       { id: id(), name: { it: "Vegetariana", en: "Vegetarian" }, desc: { it: "insalata verde, pomodoro ciliegino, melanzane grigliate, zucchine grigliate e mozzarella", en: "green salad, cherry tomato, grilled aubergine, grilled courgette and mozzarella" } },
       { id: id(), name: { it: "Crudaiola", en: "Crudaiola" }, desc: { it: "insalata verde, prosciutto crudo, grana a scaglie, mozzarella, pomodoro ciliegino e aceto di glassa balsamica", en: "green salad, raw ham, grana flakes, mozzarella, cherry tomato and balsamic glaze" } },
       { id: id(), name: { it: "Pollo", en: "Chicken" }, desc: { it: "insalata verde, sovraccoscia di pollo, rucola, melanzane grigliate, pomodori secchi e funghi champignon", en: "green salad, chicken thigh, rocket, grilled aubergine, sun-dried tomatoes and button mushrooms" } }
+    ]
+  },
+  {
+    id: "dolci",
+    name: { it: "Dolci della casa", en: "House desserts" },
+    items: [
+      { id: id(), name: { it: "Crostata", en: "Crostata (jam tart)" } },
+      { id: id(), name: { it: "Tiramisù", en: "Tiramisù" } },
+      { id: id(), name: { it: "Cheesecake", en: "Cheesecake" } }
     ]
   }
 ];
